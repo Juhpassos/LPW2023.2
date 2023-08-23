@@ -16,7 +16,7 @@
   </form>
   <button onclick="somar()">Somar</button>
   <button onclick="subtrair()">subtrair</button>
-
+  <button onclick="multiplicar()">multiplicar</button>
   <script>
 function somar(){
     let numero1; // primeiro número a ser digitado
@@ -37,7 +37,7 @@ function subtrair(){
 
     numero1 = Number( document.getElementById("num1").value);
     numero2 = Number(document.getElementById("num2").value);
-    subtrair = numero1 + numero2;
+    subtrair = numero1 - numero2;
 // ttt
     document.getElementById("resultado").innerText = subtrair;
 
