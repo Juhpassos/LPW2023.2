@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<form>
+    <label for="fname">Primeiro numero:</label><br>
+    <input type="text" id="num1" name="fname"><br>
+    <label for="lname">Segundo numero:</label><br>
+    <input type="text" id="num2" name="lname"><br><br>
+  </form>
+  <button onclick="somar()">Somar</button>
+  <button onclick="subtrair()">subtrair</button>
+  <button onclick="multiplicar()">multiplicar</button>
+  <button onclick="dividir()">dividir</button>
+
+  <script>
+    let numero1;
+    let numero2;
+    
+function somar(){
+    let numero1; // primeiro número a ser digitado
+    let numero2; // segundo número a ser digitado
+    let soma; // resultado da soma
+
+    numero1 = Number( document.getElementById("num1").value;
+    numero2 = Number(document.getElementById("num2").value;
+    soma = numero1 + numero2;
+
+    document.getElementById("resultado").innerText = soma;
+
+}
+function subtrair(){
+    let numero1; // primeiro número a ser digitado
+    let numero2; // segundo número a ser digitado
+    let subtrair; // resultado da subtrair
+
+    numero1 = ( document.getElementById("num1").value;
+    numero2 = (document.getElementById("num2").value;
+    subtrair = numero1 - numero2;
+// ttt
+    document.getElementById("resultado").innerText = subtrair;
+
+}
+
+
+function multiplicar(){
+    let numero1; // primeiro número a ser digitado
+    let numero2; // segundo número a ser digitado
+    let multiplicar; // resultado da multiplicar
+
+    numero1 = ( document.getElementById("num1").value;
+    numero2 = (document.getElementById("num2").value;
+    multiplicar = numero1 x numero2;
+
+    document.getElementById("resultado").innerText = multiplicar;
+
+}
+
+function dividir(){
+    let numero1; // primeiro número a ser digitado
+    let numero2; // segundo número a ser digitado
+    let dividir; // resultado da dividir
+
+    numero1 = document.getElementById("num1").value;
+    numero2 = document.getElementById("num2").value;
+    dividir = numero1 / numero2;
+
+    document.getElementById("resultado").innerText = dividir;
+
+}
+  </script>
+  <p id="resultado"></p>
+  <body>
+</html>
